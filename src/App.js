@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Parent from './Parent';
-import CounterContex from './CounterContex';
+import CounterContext from './CounterContext';
 
 function App() {
 
@@ -9,11 +9,11 @@ function App() {
 let countState = useState(0);
 
   return (
-    <CounterContex.Provider value={countState}>
+    <CounterContext.Provider value={countState}>
       <div className="App">
         <Parent />
       </div>
-    </CounterContex.Provider>
+    </CounterContext.Provider>
   );
 }
 
